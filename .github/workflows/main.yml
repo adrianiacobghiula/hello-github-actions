@@ -19,6 +19,7 @@ jobs:
           path: output.log
   example-job:
     name: Print Downloaded artifact
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download a single artifact
